@@ -3,6 +3,7 @@ package client;
 /**
  * Created by paabdougaye on 25/01/2017.
  */
+import radars.Amende;
 import radars.Personne;
 import radars.Voiture;
 import service.AmendeService;
@@ -30,6 +31,13 @@ public class AmendeClient {
         // SIGNALEMENT INFRACTION CLIO3
         ams.signaler("AB 123 CD","Clio 3",90);
         ams.signaler("AB 123 CD","Clio 3",140);
+
+        //Listing d'amende
+        /*Amende[] amd = ams.lister("AB 123 CD");
+        for (Amende amende:amd
+                ) {
+            System.out.println(amende.getTarif());
+        }*/
 
     }
 }

@@ -23,7 +23,7 @@ public interface AmendeService {
 
 
     @WebMethod
-    ArrayList<Amende> lister(String immatricul);
+    Amende[] lister(String immatricul);
 
 
     @WebMethod
