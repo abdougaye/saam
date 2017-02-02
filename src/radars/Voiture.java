@@ -12,10 +12,10 @@ public class Voiture implements Serializable {
 
     public Voiture() { super(); }
 
-    public Voiture(String immatriculation, String modele) {
+    public Voiture(String immatriculation, String modele, Personne proprio) {
         this.immatriculation = immatriculation;
         this.modele = modele;
-        this.proprietaire = null;
+        this.proprietaire = proprio;
     }
     public void setProprietaire(Personne p) { this.proprietaire = p; }
     public void setImmatriculation(String immatriculation) { this.immatriculation = immatriculation; }
